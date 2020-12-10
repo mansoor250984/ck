@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>The Colonel's Kitchen</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://use.fontawesome.com/a54b7a5712.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://www.jqueryscript.net/demo/Powerful-Customizable-jQuery-Carousel-Slider-OWL-Carousel/owl-carousel/owl.theme.css" rel="stylesheet">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://www.jqueryscript.net/demo/Powerful-Customizable-jQuery-Carousel-Slider-OWL-Carousel/owl-carousel/owl.carousel.js"></script>
+<script>
+    $(document).ready(function() {
+      $("#owl-demo").owlCarousel({
+      autoPlay: false,
+	  navigation : true,
+	  navigationText : ["",""],
+      items : 1,
+      itemsDesktop : [1199,1],
+      itemsMobile : [979,1]
+      });
+	  
+	  $(".menu-bar").click(function(){
+    $(".nav .navigation-menu, .overlay").toggle(500);
+	$('body').css('overflow', 'hidden');
+});
+
+$(".navigation-menu .fa-times, .mobile .navigation-menu ul li a").click(function(){
+    $(".nav div.navigation-menu, .overlay").toggle(500);
+	$('body').css('overflow-y', 'visible');
+});
+    });
+	
+	
+    </script>
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <div class="row">
+      <div class="logo"><a href="thecolonelskitchen.org"><img src="images/logo.png" alt=""></a></div>
+      <nav class="nav ml-auto">
+      <div class="navigation-menu"> <i class="fa fa-times" aria-hidden="true"></i>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Programs</a></li>
+          <li><a href="#">Partners</a></li>
+        </ul>
+        </div>
+      </nav>
+      <div class="menu-bar" id="smallmenu"><i class="fa fa-bars"></i></div>
+    </div>
+  </div>
+</header>
+<section class="hero text-center">
+  <div class="container">
+    <div class="width80">
+      <h1>Our Mission</h1>
+      <h3>Provide mentoring and adaptive reconditioning training to wounded warriors, disabled veterans and first responders through culinary arts and food service.</h3>
+      <h3></h3>
+    </div>
+  </div>
+</section>
+<section class="whiteSec common">
+  <div class="container">
+    <h2>Organizational Programs</h2>
+    <div class="row padT7">
+      <div class="col-md-4">
+        <div class="whiteBox">
+          <figure><img src="images/veteran-suicide-program.jpg" alt=""></figure>
+          <h4>Prevention of Veteran Suicide</h4>
+          <p>Enthusiastically support to the national strategy for the prevention of veteran suicide... </p>
+          <a href="#" class="btn-read"><span>Read More</span> <i class="fa fa-arrow-right" aria-hidden="true"></i></a> </div>
+      </div>
+      <div class="col-md-4">
+        <div class="whiteBox">
+          <figure><img src="images/community-initiative-programs.jpg" alt=""></figure>
+          <h4>Community First Initiative</h4>
+          <p>Provide assistance to "At-Risk Youth &amp; Families" within our communities who have been hard hit...</p>
+          <a href="#" class="btn-read"><span>Read More</span> <i class="fa fa-arrow-right" aria-hidden="true"></i></a> </div>
+      </div>
+      <div class="col-md-4">
+        <div class="whiteBox">
+          <figure><img src="images/free-food-programs.jpg" alt=""></figure>
+          <h4>Mobile Free-Food Pantry</h4>
+          <p>Provide deliverable assistance directly to impacted communities, shelters, schools and other...</p>
+          <a href="#" class="btn-read"><span>Read More</span> <i class="fa fa-arrow-right" aria-hidden="true"></i></a> </div>
+      </div>
+    </div>
+    <div class="text-center padT7 marT6"><a href="#" class="btn btn-primary">View All Programs</a></div>
+  </div>
+</section>
+<section class="impactSec common text-center">
+  <div class="container">
+    <h2 class="white">Our Impact</h2>
+    <div class="row padT5">
+      <div class="col-md-3">
+        <h5>500+</h5>
+        <h6>Specially adapted smart homes completed for our severely wounded heroes</h6>
+      </div>
+      <div class="col-md-3">
+        <h5>2400+</h5>
+        <h6>Attendees of our Invincible Spirit Festivals since 2012</h6>
+      </div>
+      <div class="col-md-3">
+        <h5>150+</h5>
+        <h6>Meals served to our nation's defenders across the country</h6>
+      </div>
+      <div class="col-md-3">
+        <h5>1,121</h5>
+        <h6>Veterans &amp; their guardians have participated in our Soaring Valor experiences</h6>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="graySec common">
+  <div class="container">
+    <h2>THE STORIES</h2>
+    <ul id="owl-demo" class="owl-carousel owl-theme">
+      <li class="item">
+        <div class="row">
+          <div class="col-md-6"> <img src="images/ron-brand.jpg" alt=""> </div>
+          <div class="col-md-6">
+            <div class="feedback">
+              <p>Thank you so much. Our veterans had a wonderful time. They all returned with smiles and want to know when they can do it again. Thank you.</p>
+              <h4>Ron Brand</h4>
+              <h5>Veterans Homes of California</h5>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="item">
+        <div class="row">
+          <div class="col-md-6"> <img src="images/ron-brand.jpg" alt=""> </div>
+          <div class="col-md-6">
+            <div class="feedback">
+              <p>Thank you so much. Our veterans had a wonderful time. They all returned with smiles and want to know when they can do it again. Thank you.</p>
+              <h4>Ron Brand</h4>
+              <h5>Veterans Homes of California</h5>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="item">
+        <div class="row">
+          <div class="col-md-6"> <img src="images/ron-brand.jpg" alt=""> </div>
+          <div class="col-md-6">
+            <div class="feedback">
+              <p>Thank you so much. Our veterans had a wonderful time. They all returned with smiles and want to know when they can do it again. Thank you.</p>
+              <h4>Ron Brand</h4>
+              <h5>Veterans Homes of California</h5>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="item">
+        <div class="row">
+          <div class="col-md-6"> <img src="images/ron-brand.jpg" alt=""> </div>
+          <div class="col-md-6">
+            <div class="feedback">
+              <p>Thank you so much. Our veterans had a wonderful time. They all returned with smiles and want to know when they can do it again. Thank you.</p>
+              <h4>Ron Brand</h4>
+              <h5>Veterans Homes of California</h5>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="conceptSec common text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 offset-md-1">
+        <h2 class="white">Concept of Operation</h2>
+        <p class="padT3">As a non-profit organization, The Colonel’s Kitchen will operate the 29 Diner as an ongoing fundraising enterprise in order to provide pro bono training for wounded warriors, disabled veterans and first responders, while maintaining flexibility to support “at-risk” community members and those that are food insecure. </p>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer text-center">
+<div class="container">
+  <h3>Get Help: Veterans in Crisis</h3>
+  <h5>P.O. BOX 220137<br>
+    CHANTILLY, VIRGINIA 20153</h5>
+  <p>A simple act of kindness can help someone feel less alone. Your actions could help save a life. #BeThere</p>
+  <div class="social"> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a> </div>
+  <p><span>2020 &copy; Copyright The Colonel's Kitchen</span> | <a href="#">Contact Us</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+</div>
+</section>
+</body>
+</html>
